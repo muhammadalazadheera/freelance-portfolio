@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/fa.all.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
   </head>
   <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -34,11 +35,11 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Verify Me</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Testimonial</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#verify_me">Verify Me</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#video-testimonial">Testimonial</a></li>
+            <li><a href="#contact_me">Contact Me</a></li>
           </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -91,7 +92,7 @@
               <img src="assets/images/verify_me.webp" alt="" />
             </div>
           </div>
-          <div class="col-md-5">
+          <div class="col-md-6">
             <div class="verify-me-content">
               <div class="verify-me-sub-title">
                 <p>VERIFY ME</p>
@@ -256,7 +257,7 @@
                 <img src="assets/images/brand-2.png" alt="" />
               </div>
               <div class="single-brand">
-                <img src="assets/images/brand-3.png" alt="" />
+                <img src="assets/images/brand-6.webp" alt="" />
               </div>
             </div>
             <div class="brand-box display-flex justify-content-space-evenly">
@@ -288,6 +289,7 @@
           <div class="col-md-12">
             <div class="video-player">
               <iframe
+                class="responsive-iframe"
                 width="100%"
                 height="670"
                 src="https://www.youtube.com/embed/MLpWrANjFbI?si=qfqwlbskKbgAjYJX"
@@ -424,9 +426,84 @@ Message</textarea
       </div>
     </section>
 
+    <section id="direct_contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-title">
+              <span class="underline">
+                <h1>You Can Directly Contact Me On</h1>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="row display-flex justify-content-center">
+          <div class="col-md-10">
+            <div
+              class="market_places display-flex justify-content-space-evenly"
+            >
+              <div class="single_market_place">
+                <a href="#"><img src="assets/images/calendly.png" alt="" /></a>
+              </div>
+              <div class="single_market_place">
+                <a href="#"><img src="assets/images/upwork.png" alt="" /></a>
+              </div>
+              <div class="single_market_place">
+                <a href="#"><img src="assets/images/fiverr.png" alt="" /></a>
+              </div>
+              <div class="single_market_place">
+                <a href="#"><img src="assets/images/instagram.png" alt="" /></a>
+              </div>
+              <div class="single_market_place">
+                <a href="#"><img src="assets/images/behance.png" alt="" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <div class="footer_text">
+              <p>Copyright © All Right Reserved</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="social_icons display-flex justify-content-flex-end">
+              <ul>
+                <li>
+                  <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-square-pinterest"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/fa.all.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 50) {
+          $("nav").addClass("dark-bg");
+        } else {
+          $("nav").removeClass("dark-bg");
+        }
+      });
+    </script>
   </body>
 </html>

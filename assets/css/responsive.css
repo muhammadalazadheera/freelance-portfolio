@@ -1,0 +1,129 @@
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+}
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  .hero-content {
+    padding: 150px 0;
+    height: auto;
+  }
+
+  .hero-text h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .navbar-brand {
+    height: 80px;
+  }
+
+  .nav > li > a {
+    font-size: 15px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .navbar-inverse {
+    background-color: #000;
+  }
+  .hero-content {
+    padding: 100px 50px;
+    height: auto;
+  }
+
+  .hero-text h1 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .verify-me-content {
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+
+  .verify-me-title h1 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .footer_text {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .social_icons {
+    justify-content: center;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .section-title h1 {
+    font-size: 30px;
+  }
+
+  .hero-sub-text p {
+    font-size: 23px;
+  }
+
+  .brand-box {
+    flex-direction: column;
+  }
+
+  .brand-box:nth-child(1) {
+    margin-bottom: 0px;
+  }
+
+  .single-brand {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+  .inline_form {
+    display: block;
+  }
+
+  .contact_form_box .inline_form .form-group {
+    width: 100%;
+  }
+
+  .single_market_place:last-child img {
+    transform: translateY(0px);
+  }
+
+  .social_icons svg {
+    font-size: 22px;
+  }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+}

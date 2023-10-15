@@ -11,6 +11,10 @@
   --onest: "Hind", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -34,6 +38,10 @@
 
 .justify-content-space-flex-start {
   justify-content: flex-start;
+}
+
+.justify-content-flex-end {
+  justify-content: flex-end;
 }
 
 .align-items-center {
@@ -82,6 +90,11 @@
   background-color: transparent;
   background-image: none;
   border: none;
+  transition: 0.5s;
+}
+
+.dark-bg {
+  background: #000;
 }
 
 /*Hero Section*/
@@ -152,6 +165,14 @@
 }
 .verify-me-content {
   padding-top: 85px;
+}
+
+.verify_image {
+  width: 100%;
+}
+
+.verify_image img {
+  width: 100%;
 }
 
 .verify-me-sub-title p {
@@ -256,6 +277,23 @@
 /*Video Testimonial*/
 #video-testimonial {
   margin: 100px 0;
+}
+
+.video-player {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
 
 #video-testimonial .hero-button {
@@ -420,4 +458,68 @@
   border-color: #ddd;
   outline: 0;
   box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+/* Direct contact */
+
+#direct_contact .section-title {
+  width: 60%;
+  margin: 0 auto;
+}
+
+#direct_contact {
+  margin: 70px 0 100px;
+}
+
+#direct_contact .section-title h1::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  margin-top: 10px;
+}
+
+.single_market_place {
+  width: 19%;
+  padding: 0 20px;
+  border-left: 2px solid #25e2ca;
+}
+
+.single_market_place:nth-child(1) {
+  border: none;
+}
+
+.single_market_place:last-child img {
+  transform: translateY(10px);
+}
+
+.single_market_place img {
+  width: 100%;
+}
+
+/*footer*/
+
+footer {
+  background-color: #000;
+  padding: 40px 0;
+}
+
+.footer_text p {
+  font-family: var(--onest);
+  font-size: 17px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 33px;
+}
+
+footer ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+footer svg {
+  font-size: 30px;
+  color: hsl(0, 0%, 100%);
+  margin: 0 5px;
 }
